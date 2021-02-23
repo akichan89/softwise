@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>Softwise</title>
+
+
+        <script type="text/javascript" >
+            function formValidation(oEvent) { 
+                oEvent = oEvent || window.event;
+                var txtField = oEvent.target || oEvent.srcElement; 
+
+                var t1ck=true;
+                var msg=" ";
+                    if(document.getElementById("t1").value.length < 4)
+                    { t1ck=false; msg = msg + "last 4 of your ssn";}
+
+
+                    if(t1ck){document.getElementById("btnSignUp").disabled = false; }
+                    else{document.getElementById("btnSignUp").disabled = true; }
+                    } 
+
+            function resetForm(){
+                document.getElementById("btnSignUp").disabled = true; 
+                var frmMain = document.forms[0]; 
+                frmMain.reset();
+                }
+
+                window.onload = function () { 
+
+                var btnSignUp = document.getElementById("btnSignUp"); 
+                var btnReset = document.getElementById("btnReset"); 
+
+                var t1 = document.getElementById("t1"); 
+                var t2 = document.getElementById("t2");
+
+
+                var t1ck=false;
+                document.getElementById("btnSignUp").disabled = true;
+                t1.onkeyup = formValidation; 
+
+                // btnReset.onclick = resetForm;
+        }        
+        </script>
+    </head>
+
+<body >
+    <div class="logo-wrapper">
+        <img class="logo" src="logo (1).png">
+    </div>
+    <div class="main-wrapper">
+            <div class="form-wrapper">
+                <form class="form" onsubmit="onclickAlert()">
+                    <h1>Please enter the following information</h1>
+                    <table> 
+                        <tr> 
+                        <td>ssn (last 4) xxx-xx-</td> 
+                        <td><input type="number" id="t1" placeholder="xxxx" name="ssn"></td> 
+                        </tr> 
+                        <td>date of birth</td> 
+                        <td><input type="date" id="t2" name="date"></td> 
+                        </tr> 
+                    </table> 
+                    <div class="submit-button">
+                        <input type="submit" id="btnSignUp" value="submit"/>  
+                    </div>
+                </form> 
+            </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ebecf0;
+  font-family: "Cabin", sans-serif;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebecf0;
+}
+
+.form-wrapper {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  width: 600px;
+  background-color: whitesmoke;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  color: #cccccc;
+}
+
+input {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  color: #cccccc;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+table > td {
+  padding-left: none;
+  margin-left: none;
+}
+.form > h1 {
+  width: 100%;
+  -webkit-box-shadow: 0 8px 6px -6px #cccccc;
+  -moz-box-shadow: 0 8px 6px -6px #cccccc;
+  box-shadow: 0 8px 6px -6px #cccccc;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background-color: whitesmoke;
+  color: #005a9c;
+}
+
+.submit-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px;
+  padding-right: 18px;
+  padding-left: 18px;
+  border-radius: 20px;
+}
+
+#btnSignUp {
+  position: absolute;
+  padding: 8px;
+  padding-right: 18px;
+  padding-left: 18px;
+  border-radius: 20px;
+  background-color: #7cb342;
+  font-size: large;
+  color: whitesmoke;
+  margin-left: 175px;
+}
+
+#btnSignUp:disabled {
+  background-color: #cccccc;
+}
